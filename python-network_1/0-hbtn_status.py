@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 # python script that fetches 'https://alu-intranet.hbtn.io/status'
 """
-    fetch 'https://intranet.hbtn.io/status'
+    fetch 'https://alu-intranet.hbtn.io/status'
 """
 import urllib.request
 
 
 if __name__ == "__main__":
-    request = urllib.request.Request("https://intranet.hbtn.io/status")
+    request = urllib.request.Request("https://alu-intranet.hbtn.io/status")
     with urllib.request.urlopen(request) as response:
         body = response.read()
         print("Body response:")
